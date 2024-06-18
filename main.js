@@ -1,3 +1,6 @@
+// richiemo il contenitore dal DOM
+const container = document.querySelector(".container")
+
 // creiamo un array con i membri del team
 const teamMembers = [
     {
@@ -54,8 +57,11 @@ for ( let kay in teamMembers) {
     let cognomeMem = singoloMembro.surname;
     let mansioneMem = singoloMembro.role;
     let fotoMem = singoloMembro.foto;
-    console.log(nomeMem, cognomeMem, ":" , mansioneMem);
-    console.log(fotoMem); 
+    //console.log(nomeMem, cognomeMem, ":" , mansioneMem);
+    //console.log(fotoMem);
+    const cards = document.createElement("div");
+    console.log(cards);
+    container.append(cards); 
  }
 
 // stampo le info nel DOM come stringa
