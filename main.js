@@ -38,7 +38,13 @@ const teamMembers = [
     },
 ];
 
-console.log(teamMembers);
+//console.log(teamMembers)
+// tiriamo fuori il contenuto 
+
+for ( let kay in teamMembers) {
+    console.log(teamMembers[kay]);
+}
+
 // cilo sui membri del team
 
 // stampo il console le info di ogni singolo membro del team
