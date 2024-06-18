@@ -10,12 +10,20 @@
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding-top: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 90%;
+
 }
 
 .card {
     width: calc(100% / 3);
-    height: auto;
     border: solid lightgray 0.1px;
+    margin-top: 50px;
 }
