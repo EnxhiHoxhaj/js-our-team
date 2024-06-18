@@ -1,5 +1,44 @@
 // creiamo un array con i membri del team
+const teamMembers = [
+    {
+        "nome": "Wayne",
+        "surname": "Barnett",
+        "role": "Founder & CEO",
+        "foto": "wayne-barnett-founder-ceo.jpg"
+    },
+    {
+        "nome": "Angela",
+        "surname": "Caroll",
+        "role": "Chif Editor",
+        "foto": "angela-caroll-chief-editor.jpg "
+    },
+    {
+        "nome": "Walter",
+        "surname": "Gordon",
+        "role": "Office Manager",
+        "foto": "walter-gordon-office-manager.jpg"
+    },
+    {
+        "nome": "Angela",
+        "surname": "Lopez",
+        "role": "Social Media Manager",
+        "foto": "angela-lopez-social-media-manager.jpg"
+    },
+    {
+        "nome": "Scott",
+        "surname": "Estrada",
+        "role": "Developer",
+        "foto": "scott-estrada-developer.jpg "
+    },
+    {
+        "nome": "Barbra",
+        "surname": "Ramos",
+        "role": "Graphic designer",
+        "foto": "barbara-ramos-graphic-designer.jpg "
+    },
+];
 
+console.log(teamMembers);
 // cilo sui membri del team
 
 // stampo il console le info di ogni singolo membro del team
