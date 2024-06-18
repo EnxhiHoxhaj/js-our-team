@@ -54,9 +54,19 @@ for ( let kay in teamMembers) {
 
     //contenitore delle info in html
     let cards = document.createElement("div");
-    cards.classList.add("card")
-    let img = document.createElement("div")
-    img.classList.add("foto")
+    cards.classList.add("card");
+
+    // contenitore delle foto
+    let fotoProfile = document.createElement("div");
+    fotoProfile.classList.add("foto");
+    cards.append(fotoProfile);
+
+    //contenitore delle info
+;
+    let infoProfile = document.createElement("div");
+    infoProfile.classList.add("info");
+    cards.append(infoProfile);
+    
     //console.log(singoloMembro);
     // stampo il console le info di ogni singolo membro del team
     let nomeMem = singoloMembro.nome;
@@ -66,12 +76,9 @@ for ( let kay in teamMembers) {
     //console.log(nomeMem, cognomeMem, ":" , mansioneMem);
     //console.log(fotoMem);
     // inseisco le info dei membri nei div html
-    cards.append(nomeMem, " ", cognomeMem, ": ", mansioneMem, " ");
-    img.append(fotoMem);
-    cards.append(img);
+    infoProfile.append(nomeMem, " ", cognomeMem, ": ", mansioneMem, " ");
+    fotoProfile.append(fotoMem);
     console.log(cards);
     // stampo le info nel DOM come stringa
     container.append(cards);
  }
-
-
