@@ -51,6 +51,11 @@ for ( let kay in teamMembers) {
 
  for (let i = 0; i < teamMembers.length; i++) {
     let singoloMembro = teamMembers [i];
+
+    //contenitore delle info in html
+    let cards = document.createElement("div");
+    cards.classList.add("card")
+
     //console.log(singoloMembro);
     // stampo il console le info di ogni singolo membro del team
     let nomeMem = singoloMembro.nome;
@@ -59,9 +64,11 @@ for ( let kay in teamMembers) {
     let fotoMem = singoloMembro.foto;
     //console.log(nomeMem, cognomeMem, ":" , mansioneMem);
     //console.log(fotoMem);
-    const cards = document.createElement("div");
+    // inseisco le info dei membri nei div html
+    cards.append(nomeMem, cognomeMem, ":", mansioneMem);
     console.log(cards);
-    container.append(cards); 
+    container.append(cards);
+
  }
 
 // stampo le info nel DOM come stringa
