@@ -41,16 +41,21 @@ const teamMembers = [
 //console.log(teamMembers)
 // tiriamo fuori il contenuto 
 for ( let kay in teamMembers) {
-    console.log(teamMembers[kay]);
+    //console.log(teamMembers[kay]);
 }
 
 // cilo sui membri del team
 
  for (let i = 0; i < teamMembers.length; i++) {
     let singoloMembro = teamMembers [i];
-    console.log(singoloMembro);
+    //console.log(singoloMembro);
+    // stampo il console le info di ogni singolo membro del team
+    let nomeMem = singoloMembro.nome;
+    let cognomeMem = singoloMembro.surname;
+    let mansioneMem = singoloMembro.role;
+    let fotoMem = singoloMembro.foto;
+    console.log(nomeMem, cognomeMem, ":" , mansioneMem);
+    console.log(fotoMem); 
  }
-
-// stampo il console le info di ogni singolo membro del team
 
 // stampo le info nel DOM come stringa
